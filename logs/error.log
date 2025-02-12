@@ -1,0 +1,6 @@
+[02-02-2025 20:50:17] error: Database connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[02-02-2025 20:52:42] error: Database connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[02-02-2025 20:52:45] error: Database connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[02-02-2025 23:29:57] error: Authentication error: No token provided
+[02-02-2025 23:30:58] error: Authentication error: No token provided
+[02-02-2025 23:31:20] error: Authentication error: No token provided
