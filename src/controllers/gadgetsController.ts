@@ -1,10 +1,10 @@
-// filepath: /d:/web-dev/apps/node-full-stack/test/IMF-API/src/controllers/gadgetsController.ts
 import { Request, Response } from "express";
 import { getAllGadgets, getGadgetById, createGadget, updateGadget, deleteGadget } from "../services/gadgetsService";
 
 export const getGadgets = async (req: Request, res: Response) => {
     try {
-        const gadgets = await getAllGadgets();
+        const userId = req.query.userId as string;
+        const gadgets = await getAllGadgets(userId);
         res.json(gadgets);
     } catch (error) {
         res.status(500).json({ error: "Failed to fetch gadgets" });
@@ -13,7 +13,8 @@ export const getGadgets = async (req: Request, res: Response) => {
 
 export const getGadget = async (req: Request, res: Response) => {
     try {
-        const gadget = await getGadgetById(req.params.id);
+        const userId = req.query.userId as string;
+        const gadget = await getGadgetById(req.params.id, userId);
         if (!gadget) {
             res.status(404).json({ error: "Gadget not found" });
             return;
