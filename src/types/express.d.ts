@@ -1,7 +1,7 @@
 import * as express from 'express';
 
 interface authContext {
-    userId: mongoose.Schema.Types.ObjectId;
+    userId:string;
     role: string;
 }
 

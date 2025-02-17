@@ -1,5 +1,13 @@
 import { Request, Response } from "express";
-import { getAllGadgets, getGadgetById, createGadget, updateGadget, deleteGadget } from "../services/gadgetsService";
+
+import {
+    getAllGadgets,
+    getGadgetById,
+    createGadget,
+    updateGadget,
+    deleteGadget
+} from "../services/gadgetsService";
+
 
 export const getGadgets = async (req: Request, res: Response) => {
     try {

@@ -1,4 +1,3 @@
-// filepath: /d:/web-dev/apps/node-full-stack/test/IMF-API/src/services/gadgetsService.ts
 import { PrismaClient } from "@prisma/client";
 import { Gadget } from "../types/models";
 
