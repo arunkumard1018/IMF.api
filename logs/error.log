@@ -4,3 +4,34 @@
 [02-02-2025 23:29:57] error: Authentication error: No token provided
 [02-02-2025 23:30:58] error: Authentication error: No token provided
 [02-02-2025 23:31:20] error: Authentication error: No token provided
+[18-02-2025 13:01:46] error: Invalid token
+[18-02-2025 13:02:20] error: Invalid token: invalid token
+[18-02-2025 13:02:38] error: Invalid token: JsonWebTokenError
+[18-02-2025 13:03:16] error: Invalid token: JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\jsonwebtoken\verify.js:82:17)
+    at verifyToken (D:\web-dev\apps\node-full-stack\test\IMF-API\src\lib\jwtConfig.ts:12:16)
+    at authMiddleware (D:\web-dev\apps\node-full-stack\test\IMF-API\src\middlewares\auth.ts:13:36)
+    at Layer.handle [as handle_request] (D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (D:\web-dev\apps\node-full-stack\test\IMF-API\node_modules\express\lib\router\layer.js:95:5)
+[18-02-2025 13:03:48] error: invalid token
+[18-02-2025 13:06:11] error: Registration failed for email: arun@imf.com - 
+Invalid `prisma.user.create()` invocation in
+D:\web-dev\apps\node-full-stack\test\IMF-API\src\controllers\authController.ts:13:40
+
+  10 const { name, password, email } = req.body;
+  11 const hashedPassword = await hashPassword(password);
+  12 try {
+→ 13     const user = await prisma.user.create(
+Unique constraint failed on the fields: (`email`)
+[18-02-2025 14:49:21] error: jwt expired
+[18-02-2025 15:40:18] error: Validation failed: "status" must be one of [Available, Deployed, Destroyed]
+[18-02-2025 15:41:21] error: Validation failed: "status" must be one of [Available, Deployed, Destroyed]
+[18-02-2025 15:52:18] error: jwt expired
+[18-02-2025 19:49:50] error: jwt expired
+[18-02-2025 19:50:28] error: jwt expired
+[18-02-2025 19:51:03] error: jwt expired

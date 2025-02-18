@@ -6,15 +6,24 @@ const logFormat = winston.format.printf(({ level, message, timestamp }) => {
     return `[${timestamp}] ${level}: ${message}`;
 });
 
-
 const transports: winston.transport[] = [];
-
 
 // Error log file for errors
 transports.push(
     new winston.transports.File({
         filename: 'logs/error.log',
         level: 'error',
+        format: winston.format.combine(
+            winston.format.timestamp(),
+            logFormat
+        ),
+    })
+);
+
+// Combined log file for all logs
+transports.push(
+    new winston.transports.File({
+        filename: 'logs/combined.log',
         format: winston.format.combine(
             winston.format.timestamp(),
             logFormat

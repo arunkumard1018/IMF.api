@@ -1,15 +1,10 @@
-import * as express from 'express';
+import { Request } from "express";
 
-interface authContext {
-    userId:string;
-    role: string;
-}
-
-declare global {
-    namespace Express {
-        interface Request {
-            authContext: authContext;
-        }
+declare module "express-serve-static-core" {
+    interface Request {
+        authContext: {
+            userId: string;
+            role: string;
+        };
     }
 }
-export type Id = mongoose.Schema.Types.ObjectId;

@@ -4,8 +4,8 @@ import bcrypt from 'bcrypt';
 const SECRET_KEY = 'your-secret-key';
 const SALT_ROUNDS = 10;
 
-export const generateToken = (userId: string, role: string): string => {
-    return jwt.sign({ userId, role }, SECRET_KEY, { expiresIn: '1h' });
+export const generateToken = (userId: string, role: string, email: string): string => {
+    return jwt.sign({ userId, role, email }, SECRET_KEY, { expiresIn: '1h' });
 };
 
 export const verifyToken = (token: string): { userId: string; role: string } => {
