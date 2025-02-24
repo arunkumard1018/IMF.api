@@ -52,12 +52,12 @@ export const createNewGadget = async (req: Request, res: Response) => {
     const userId = req.authContext.userId;
     if (error) {
         logger.error(`Validation failed for creating gadget: ${error.message}`);
-        res.status(HttpStatusCode.BAD_REQUEST).json(ResponseEntity("error", error.name, undefined, error.message));
+        res.status(HttpStatusCode.BAD_REQUEST).json(ResponseEntity("error", error.message));
         return;
     }
 
     try {
-        const codename = generateUniqueCodename(userId);
+        const codename = await generateUniqueCodename(userId);
         const gadgetData: Omit<Gadget, 'id'> = { ...req.body, codename, userId: userId };
         const gadget = await createGadget(gadgetData);
         logger.info(`Gadget created successfully for user ${userId} with id ${gadget.id}`);

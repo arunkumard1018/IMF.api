@@ -35,3 +35,73 @@ Unique constraint failed on the fields: (`email`)
 [18-02-2025 19:49:50] error: jwt expired
 [18-02-2025 19:50:28] error: jwt expired
 [18-02-2025 19:51:03] error: jwt expired
+[24-02-2025 20:45:43] error: Validation failed for creating gadget: "name" is required
+[24-02-2025 20:46:02] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:47:29] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:47:40] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:47:50] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:51:17] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+{
+  data: {
+    name: "Sonet",
+    codename: {},
+              ~~
+    userId: "4edfd25a-d586-4add-8244-1f835eba14e9"
+  }
+}
+
+Argument `codename`: Invalid value provided. Expected String, provided Object.
+[24-02-2025 21:17:29] error: Registration failed for email: ethan@imf.com - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    password: "$2b$10$ZceORFYaEirmVt9Vpd8GuejTxIQUmtHy4/pUtXSZptQLet4oTnMM2",
+    email: "ethan@imf.com",
++   name: String
+  }
+}
+
+Argument `name` is missing.
+[24-02-2025 21:25:21] error: Registration failed for email: ethan@imf.com - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    password: "$2b$10$lXlFla7kdfE.A2OrYiaZL.qAhVwEUja.QsT1eQnUOpO2WJPTikfve",
+    email: "ethan@imf.com",
++   name: String
+  }
+}
+
+Argument `name` is missing.
+[24-02-2025 21:27:17] error: Registration failed for email: ethan@imf.com - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    password: "$2b$10$LFyxZdghgbSrseTgTmMBkuHk0/SarREZ9uCWF.7mazwvmqSGQ9.6C",
+    email: "ethan@imf.com",
++   name: String
+  }
+}
+
+Argument `name` is missing.

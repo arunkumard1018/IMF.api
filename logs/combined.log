@@ -1,0 +1,144 @@
+[24-02-2025 20:28:47] info: Connecting To Server....
+[24-02-2025 20:35:30] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 20:35:31] info: Login attempt for email: ethan@imf.com
+[24-02-2025 20:35:32] warn: Invalid password for email: ethan@imf.com
+[24-02-2025 20:35:38] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 20:35:38] info: Login attempt for email: ethan@imf.com
+[24-02-2025 20:35:39] info: Login successful for email: ethan@imf.com
+[24-02-2025 20:37:34] info: [[38;5;214mGET[0m] Request received from undefined, localhost:8001/api/gadgets?status=Decommissioned IP:::1
+[24-02-2025 20:37:34] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:37:34] info: Fetching gadgets for user 4edfd25a-d586-4add-8244-1f835eba14e9 with status Decommissioned
+[24-02-2025 20:38:36] info: [[38;5;214mGET[0m] Request received from undefined, localhost:8001/api/gadgets IP:::1
+[24-02-2025 20:38:36] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:38:36] info: Fetching gadgets for user 4edfd25a-d586-4add-8244-1f835eba14e9 with status undefined
+[24-02-2025 20:39:16] info: [[38;5;214mGET[0m] Request received from undefined, localhost:8001/api/gadgets?status=Deployed IP:::1
+[24-02-2025 20:39:16] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:39:16] info: Fetching gadgets for user 4edfd25a-d586-4add-8244-1f835eba14e9 with status Deployed
+[24-02-2025 20:39:23] info: [[38;5;214mGET[0m] Request received from undefined, localhost:8001/api/gadgets IP:::1
+[24-02-2025 20:39:23] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:39:23] info: Fetching gadgets for user 4edfd25a-d586-4add-8244-1f835eba14e9 with status undefined
+[24-02-2025 20:39:39] info: [[38;5;214mGET[0m] Request received from undefined, localhost:8001/api/gadgets?status=Available IP:::1
+[24-02-2025 20:39:39] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:39:39] info: Fetching gadgets for user 4edfd25a-d586-4add-8244-1f835eba14e9 with status Available
+[24-02-2025 20:44:24] info: [[38;5;214mGET[0m] Request received from undefined, localhost:8001/api/gadgets?status=Available IP:::1
+[24-02-2025 20:44:24] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:44:24] info: Fetching gadgets for user 4edfd25a-d586-4add-8244-1f835eba14e9 with status Available
+[24-02-2025 20:45:32] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 20:45:32] info: Login attempt for email: ethan@imf.com
+[24-02-2025 20:45:32] info: Login successful for email: ethan@imf.com
+[24-02-2025 20:45:43] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/gadgets?status=Available IP:::1
+[24-02-2025 20:45:43] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:45:43] error: Validation failed for creating gadget: "name" is required
+[24-02-2025 20:46:02] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/gadgets?status=Available IP:::1
+[24-02-2025 20:46:02] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:46:02] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:47:29] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/gadgets?status=Available IP:::1
+[24-02-2025 20:47:29] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:47:29] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:47:40] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/gadgets?status=Available IP:::1
+[24-02-2025 20:47:40] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:47:40] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:47:50] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/gadgets IP:::1
+[24-02-2025 20:47:50] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:47:50] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+
+Unique constraint failed on the fields: (`codename`)
+[24-02-2025 20:50:33] info: Connecting To Server....
+[24-02-2025 20:51:08] info: Connecting To Server....
+[24-02-2025 20:51:16] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/gadgets IP:::1
+[24-02-2025 20:51:16] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:51:17] error: Failed to create gadget for user 4edfd25a-d586-4add-8244-1f835eba14e9: 
+Invalid `prisma.gadget.create()` invocation:
+
+{
+  data: {
+    name: "Sonet",
+    codename: {},
+              ~~
+    userId: "4edfd25a-d586-4add-8244-1f835eba14e9"
+  }
+}
+
+Argument `codename`: Invalid value provided. Expected String, provided Object.
+[24-02-2025 20:52:29] info: Connecting To Server....
+[24-02-2025 20:52:37] info: Connecting To Server....
+[24-02-2025 20:52:43] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/gadgets IP:::1
+[24-02-2025 20:52:43] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 20:52:44] info: Gadget created successfully for user 4edfd25a-d586-4add-8244-1f835eba14e9 with id c0c70170-9305-442a-ae7f-bf29e0a5a9ca
+[24-02-2025 20:57:59] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 20:57:59] info: Login attempt for email: ethan@imf.com
+[24-02-2025 20:58:00] info: Login successful for email: ethan@imf.com
+[24-02-2025 20:59:45] info: Connecting To Server....
+[24-02-2025 21:03:00] info: Connecting To Server....
+[24-02-2025 21:05:05] info: Connecting To Server....
+[24-02-2025 21:05:11] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 21:05:12] info: Login attempt for email: ethan@imf.com
+[24-02-2025 21:05:13] info: Login successful for email: ethan@imf.com
+[24-02-2025 21:17:28] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/register IP:::1
+[24-02-2025 21:17:29] error: Registration failed for email: ethan@imf.com - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    password: "$2b$10$ZceORFYaEirmVt9Vpd8GuejTxIQUmtHy4/pUtXSZptQLet4oTnMM2",
+    email: "ethan@imf.com",
++   name: String
+  }
+}
+
+Argument `name` is missing.
+[24-02-2025 21:18:35] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 21:18:35] info: Login attempt for email: ethan@imf.com
+[24-02-2025 21:18:36] info: Login successful for email: ethan@imf.com
+[24-02-2025 21:25:20] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/register IP:::1
+[24-02-2025 21:25:21] error: Registration failed for email: ethan@imf.com - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    password: "$2b$10$lXlFla7kdfE.A2OrYiaZL.qAhVwEUja.QsT1eQnUOpO2WJPTikfve",
+    email: "ethan@imf.com",
++   name: String
+  }
+}
+
+Argument `name` is missing.
+[24-02-2025 21:27:16] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/register IP:::1
+[24-02-2025 21:27:17] error: Registration failed for email: ethan@imf.com - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    password: "$2b$10$LFyxZdghgbSrseTgTmMBkuHk0/SarREZ9uCWF.7mazwvmqSGQ9.6C",
+    email: "ethan@imf.com",
++   name: String
+  }
+}
+
+Argument `name` is missing.
+[24-02-2025 21:28:46] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 21:28:46] info: Login attempt for email: ethan@imf.com
+[24-02-2025 21:28:46] info: Login successful for email: ethan@imf.com
+[24-02-2025 21:29:01] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 21:29:01] info: Login attempt for email: ethan@imf.com
+[24-02-2025 21:29:01] info: Login successful for email: ethan@imf.com
+[24-02-2025 21:34:31] info: [[38;5;214mPOST[0m] Request received from undefined, localhost:8001/api/auth/login IP:::1
+[24-02-2025 21:34:31] info: Login attempt for email: ethan@imf.com
+[24-02-2025 21:34:31] info: Login successful for email: ethan@imf.com
+[24-02-2025 21:34:48] info: [[38;5;214mGET[0m] Request received from undefined, localhost:8001/api/gadgets IP:::1
+[24-02-2025 21:34:48] info: Token verified for userId: 4edfd25a-d586-4add-8244-1f835eba14e9
+[24-02-2025 21:34:48] info: Fetching gadgets for user 4edfd25a-d586-4add-8244-1f835eba14e9 with status undefined
